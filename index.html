@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        <title>The_Core</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        <!-- Google font Icon -->
+<link
+href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"
+/>
+        <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
+
+        <script src="js/pace.js"></script>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+
+
+    </head>
+   <body class="font-sans antialiased">
+    <div id="global-container">
+        <div id="container" class="bg-black">
+            <div class="mobile-menu__cover"></div>
+            <div class="nav-trigger"></div>
+            <header class="header">
+              <div class="header__inner appear up">
+                <div class="logo item">
+                  <img src="images/logo.svg" alt="" class="logo__img" />  
+                  <span class="logo__stay">The_</span>
+                  <span class="red">_Core</span>
+                </div>
+
+                <nav class="header__nav">
+                  <ul class="header__ul">
+                    <li class="header__li item"><a href="#trainer">トレーナー</a></li>
+                    <li class="header__li item"><a href="#feature1">Coreの特徴</a></li>
+                    <li class="header__li item">
+                      <a href="https://www.instagram.com/muraokainsta/"><img src="./images/instagram.svg"></a>
+                    </li>
+                    <li class="header__li item">
+                      <a href="https://twitter.com/tomomuranet"><img src="./images/twitter.svg"></a>
+                    </li>
+                  </ul>
+                </nav>
+                <button class="mobile-menu__btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </header>
+            
+            <div id="content">
+            <div class="hero">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero__title">Coreを燃焼！</div>
+                        <img src="images/top1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__title">Coreを燃焼！</div>
+                        <img src="images/top2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__title">Coreを燃焼！</div>
+                        <img src="images/top3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="hero__footer">
+                        <img class="hero__downarrow" src="images/arrow.svg" />
+                        <span class="hero__scrolltext">scroll</span>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content">
+                <aside class="side left">
+                    <div class="side__inner">
+                        <a class="twitter icon tween-animate-title" href="#">Twitter</a>
+                        <a class="fb icon tween-animate-title" href="#">Facebook</a>
+                    </div>
+                </aside>
+                <main>
+                    <section class="text-gray-600 body-font concept" id="thinking">
+                        <div class="concept__inner py-24 mx-auto">
+                          <div class="w-full mb-10">
+                            <h1 class="sm:text-3xl main-title font-medium title-font mb-2 text-red-600 tween-animate-title">Core's Theory</h1>
+                            <p class="sub-title text-gray tracking-widest font-medium title-font mb-1 tween-animate-title">Coreのボディメイクに対するセオリー・考え方</p>
+                            <p class="leading-relaxed text-base text-gray-400">
+                                まず、Coreにおいては<span class="text-red-600 font-extrabold">ダイエットとは脂肪を燃焼することである</span>という前提で物事を考えていきます。<br>
+                               現代の社会ではダイエットやボディメイクに関する様々な情報が氾濫している状況です。<br>
+                               しかし、大抵の場合それら様々な手法には表面からは見えづらい、<span class="text-indigo-600 font-extrabold">隠された条件</span>や<span class="text-indigo-600 font-extrabold">化学的な理論</span>があります。<br>
+                               従って、あるダイエットを実践しているつもりでも間違っていて効果が出ないといった悩みを持つ方はたくさんいると思います。<br>
+                               少しだけ、良く聞くダイエット方法と<span class="text-pink-500">その理論や誤解</span>について見てみましょう。
+                            </p>
+                          </div>
+                          <div class="flex flex-wrap">
+                            <div class="appear right wrong__texts xl:w-1/4 lg:w-1/2 md:w-full px-8 border-l-2 border-red-500 border-opacity-60 mb-4">
+                              <h2 class="wrong_diet__title text-lg sm:text-xl text-gray-400 font-bold title-font mb-2  item">炭水化物抜き(低糖質)ダイエット</h2>
+                                <img class="wrong-img" src="images/ng.png">
+                              <p class=" appear up leading-relaxed text-base mb-4 text-gray-400">
+                                炭水化物は水分を多く含むため、短期的に見れば<span class="underline text-pink-500 font-extrabold">体重</span>はすぐに落ちます。しかし、このダイエット方法の本質(別名)は
+                                <span class="text-indigo-500 font-extrabold">「ケトジェニックダイエット」</span>といって、ケトン体を身体から出すダイエットであり、専門家の指導のもとでなければ高確率で失敗します。
+                            </p>
+
+                            </div>
+                            <div class="appear right wrong__texts xl:w-1/4 lg:w-1/2 md:w-full px-8 border-l-2 border-red-500 border-opacity-60 mb-4">
+                              <h2 class="text-lg sm:text-xl text-gray-400 font-bold title-font mb-2 wrong_diet__title item">断食・プチ断食・カロリー制限</h2>
+                              <img class="wrong-img" src="images/ng.png">
+                              <p class="leading-relaxed text-base mb-4 text-gray-400">
+                                この方法の謳い文句は<span class="underline text-pink-500 font-extrabold">「腸内環境を整える・脂肪の燃えやすい身体を作る」</span>ですね。短期的な効果はもちろん見込めませがやはり、脂肪を燃やすための燃料(食物)を正しく摂取する必要があります。脂肪を燃やすための燃料(食物)を正しく摂取する必要があります。
+                            </p>
+
+                            </div>
+                            <div class="appear right wrong__texts xl:w-1/4 lg:w-1/2 md:w-full px-8 border-l-2 border-red-500 border-opacity-60 mb-4">
+                              <h2 class="text-lg sm:text-xl text-gray-400 font-bold title-font mb-2 wrong_diet__title item">有酸素運動(ジョギングなど)</h2>
+                              <img class="wrong-img" src="images/ng.png">
+                              <p class="leading-relaxed text-base mb-4 text-gray-400">
+                                運動で<span class="text-indigo-500">痩せる</span>場合の方法です。1kg = 7200kcal の体脂肪を燃焼するためには(体重にもよりますが)約100km走る必要があります。この運動を果てしなく続けられるでしょうか？<br>
+                                過度なランニングは<span class="underline text-pink-500 font-extrabold">足腰に負担をかける</span>といったデメリットもあります。
+                            </p>
+
+                            </div>
+                            <div class="appear right wrong__texts xl:w-1/4 lg:w-1/2 md:w-full px-8 border-l-2 border-red-500 border-opacity-60 mb-4 item">
+                              <h2 class="text-lg sm:text-xl text-gray-400 font-bold title-font mb-2 wrong_diet__title item">筋トレ(データ管理をしていないケース)</h2>
+                              <img class="wrong-img" src="images/ng.png">
+                              <p class="leading-relaxed text-base mb-4 text-gray-400">
+                                最近では、筋トレの効果が知れ渡り、ダイエットの主流になってきたのではないでしょうか？Coreでも筋トレをメニューに取り入れています。<br>
+                                しかし、<span class="underline text-pink-500 font-extrabold">間違った方法</span>で筋トレをし続けてもダイエット効果が見込めない場合があります。
+                                Coreでは筋トレの効果を最大限に発揮するために、<span class="text-red-600 font-extrabold">普段の生活習慣や筋トレ前後の身体のケア</span>を化学的な根拠に基づいて本格的に指導します。
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+                      <div class="strategy__inner mx-auto" id="strategy">
+                        <h2 class="main-title text-gray tween-animate-title">Core's Strategy</h2>
+                        <p class="sub-title text-gray tween-animate-title">三位一体のトレーニングで徹底燃焼！</p>
+                        <p class="text-gray-300 my-4">
+                            Coreでは下の図のような<span class="text-red-600 font-extrabold">三位一体の盾</span>で基礎代謝を高く維持し、常に体が燃焼モードになることを目指します。
+                        </p>
+                        <div class="strategy__img cover-slide" >
+                            
+                            <img src="images/strategy.jpeg" class="img-zoom">
+                        </div>
+                      </div>
+                      <section class="tab-menu" id="trainer">
+                          <div class="feature-btns">
+                            <h2 class="main-title text-gray tween-animate-title">Core's Trainer</h2>
+                            <p class="sub-title text-gray tween-animate-title mb-2">トレーナー・スタッフ紹介</p>
+                          </div>
+                        <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/tomoyuki.jpg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="text-black">村岡</span>
+                                <span class="red">倫行</span>
+                            </div>
+                            <div class="feature__sub item font-bold">muraoka <span class="red">tomoyuki</span></div>
+                            <div class="feature__text-gray item">
+                                <h3 class="text-xl font-bold">経歴</h3>
+                                <ul>
+                                  <li class="underline">・第18回アマチュア修斗関東選手権</li>→ウェルター級 <span class="text-red-600 text-xl font-bold">優勝</span>
+                                  <li class="underline">・第9回北信越アマチュア修斗選手権</li>→ウェルター級 <span class="text-red-600 text-xl font-bold">優勝</span></li>
+                                  <li class="underline">・第26回全日本アマチュア修斗選手権大会</li>→ウェルター級 <span class="text-green-600 text-xl font-bold">ベスト8</span></li>
+                                </ul>
+                                <p>アマチュアでの実績を重ね、2019年から<span class="font-extrabold">プロ総合格闘家</span>として活動中。</p>
+                                <h3 class="text-xl font-bold">保有資格</h3>
+                                <p class="font-bold">NESTA-PFT（全米エクササイズ＆スポーツトレーナー協会）</p>
+                                <a href="https://www.instagram.com/muraokainsta/"><img src="./images/instagram.svg"></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                      <section class="feature" id="trainer2">
+                            <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/profile.jpg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="red">アツいあなたへ</span>
+                                <span class="text-black">メッセージ</span>
+                            </div>
+                            <div class="feature__sub item red font-bold">トレーナーとして...</div>
+                            <p>はじめまして！
+                              <span class="font-bold underline">The_Coreの村岡倫行</span>と申します。
+                              トレーニング、ダイエットがキツい😭、うまくいかないと思っている方は多いと思います。
+                              <span class="font-bold">自分も最初はそうでした。</span>
+                              しかし、正しい知識を身につけ前向きに取り組むことでボディメイクの楽しさを知ることができました。
+                              ジムに来てくださる皆様には、楽しみながらフィットネスを行い理想の体型や健康的な身体になってもらえるよう全力でサポートいたします。
+                              ぜひ一緒にフィットネスを楽しみましょう！
+                              </p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                      <section class="tab-menu">
+                          <div class="feature-btns">
+                            <h2 class="main-title text-gray tween-animate-title">Core's Feature</h2>
+                            <p class="sub-title text-gray tween-animate-title mb-2">Coreで主軸となるトレーニングの特徴</p>
+                              <button class="feature-btn-1 hidden sm:inline-block px-6 text-gray-300 bg-gray-300 rounded-t-lg p-2 mr-2 bg-red-600">フリーウェイト</button>
+                              <button class="feature-btn-2 hidden sm:inline-block px-6 bg-gray-300 rounded-t-lg p-2 mr-2">キックボクシング</button>
+                              <button class="feature-btn-3 hidden sm:inline-block px-6 bg-gray-300 rounded-t-lg p-2 mr-2">食事指導</button>
+                              <!-- <button class="feature-btn-4 hidden sm:inline-block px-6 bg-gray-300 rounded-t-lg p-2 mr-2">4</button> -->
+                          </div>
+                      </section>
+                      </section>
+                      <section class="feature" id="feature1">
+                            <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/feature.jpeg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="red">Burn</span>
+                                <span class="text-black">your body</span>
+                            </div>
+                            <div class="feature__sub item red font-bold">体の芯から燃焼</div>
+                            <div class="feature__text-gray item">
+                                <p>体づくりの土台として私は<span class="font-bold underline">フリーウエイト</span>をおすすめします。
+                                  <span class="font-bold">フリーウエイトトレーニング</span>は、自力でバランスを取る必要があるため、メインターゲット以外の筋肉も鍛えられますし、体幹トレーニングとしてもとても効果を高く得られることができます。
+                                  日本のジムでは、トレーニングの導入としてマシンを案内されることが多いですが、安全性を考えるとプログラムとして展開されている以上妥当な選択肢と言えます。
+                                  一人でトレーニングする際は安全性の確保が難しいのですが、<span class="font-bold">パーソナルトレーニングでフリーウエイトトレーニングを習得</span>し、これからのトレーニングで役立てていただきたいです。
+                                  </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                      <section class="feature sm:hidden" id="feature2">
+                            <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/doktor.jpg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="red">Maintenance</span>
+                                <span class="text-black">your body</span>
+                            </div>
+                            <div class="feature__sub item red font-bold">キックボクシング</div>
+                            <div class="feature__text-gray item">
+                                <p>キックボクシングは全身運動なので、<span class="font-bold">効率よく全身の筋肉を鍛える</span>ことができます。またキックは<span class="font-bold">お尻の筋肉</span>、パンチでは<span class="font-bold">肩や二の腕の筋肉</span>を使いますので、ダイエットやシェイプアップくびれ作りにとても効果的です。
+                                  また<span class="font-bold"></span>有酸素運動により、心肺機能の向上や血圧の低下など健康面においても様々な効果を得られることができます。
+                                  ストレスが多い現代社会において、キックボクシングで<span class="font-bold">筋トレ、ダイエット、ストレス解消</span>を効率よく行うことができます！
+                                  さらに、当ジムのトレーナーは<span class="font-bold underline">現役のプロ格闘家</span>なので、実践的な知識を聞きたい方にも答えることができます。
+                                  </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                      <section class="feature sm:hidden" id="feature3">
+                            <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/programer.jpg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="red">Food</span>
+                                <span class="text-black">Training</span>
+                            </div>
+                            <div class="feature__sub item red font-bold">食事指導</div>
+                            <div class="feature__text-gray item">
+                                <p>体重を落とすための極端な食事制限は、一時的なダイエットには効果的かもしれません。
+                                  しかし、目標達成後もとの食事習慣に戻ると<span class="font-bold">高確率でリバウンド</span>するでしょう。
+                                  ボディメイクにおいて食事の量を減らしていくのは実は<span class="font-bold"></span>最後の段階にするべきことです。
+                                  食事は一生続けるものです。
+                                  ジムに通うことを機に<span class="font-bold">持続可能な食事メニュー</span>の知識を身につけましょう。
+                                  ✴️ジムに通っていない時でもチケット購入のお客さまには<span class="font-bold underline">LINEで食事相談</span>を受け付けております。
+                                  </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                      <section class="feature sm:hidden" id =feature4>
+                            <div class="feature__inner">
+                        <div class="feature__img cover-slide">
+                            <img
+                            class="img-zoom"
+                            src="images/feature.jpeg"
+                            alt=""
+                            />
+                        </div>
+                        <div class="feature__texts appear left">
+                            <div class="feature__texts-inner">
+                            <div class="feature__title main-title  item">
+                                <span class="red">Burn</span>
+                                <span class="text-black">your body</span>
+                            </div>
+                            <div class="feature__sub item red font-bold">体の芯から燃焼</div>
+                            <div class="feature__text-gray item">
+                                <p>太陽は<span class="red">核融合</span>によって自分自身が燃えています。</p>
+                                <p>地球の<span class="red">核</span>もまた燃え続けています。</p>
+                                <p>あなたもトレーニングを通して、<span class="red">燃え続ける</span>身体を手に入れませんか？</p>
+                                <p>
+                                Coreでは多様なトレーニングを通して、体脂肪を効率的に燃焼していきます。
+                                </p>
+                                <p>あなたの望む美しい身体を手に入れましょう。</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="houses">
+                        <div>
+                        <h2 class="main-title text-gray tween-animate-title">Main Training</h2>
+                        <p class="sub-title text-gray tween-animate-title">あなた体作りをサポートするトレーニングのギャラリーです。</p>
+                        </div>
+                        <div class="houses__inner">
+                        <div class="houses__item">
+                            <p class="red font-extrabold">スクワット</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/skwat.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">スクワットは大臀筋や大腿四頭筋、ハムストリングなど、大きい筋肉をメインに鍛えることができます。 筋肉量が増える結果として基礎代謝も上がり、脂肪燃焼につながるでしょう。</p>
+                        </div>
+                        <div class="houses__item">
+                            <p class="red font-extrabold">ベンチプレス</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/bentch.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">ベンチプレスは基本的に、仰向けで負荷をかけて行うプッシュアップであり、胸（大胸筋、小胸筋、前鋸筋、鎖骨下筋）、肩、三頭筋、腹筋が連動するよう鍛えることができます。</p>
+                        </div>
+                        <div class="houses__item">
+                            <p class="red font-extrabold">キックボクシング</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/mit.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">キックボクシングはダイエットに有効な「有酸素運動」と「無酸素運動」を同時にでき、脂肪燃焼や基礎代謝の向上を一気に図れるのがメリットです。</p>
+                        </div>
+                        <div class="houses__item">
+                            <p class="text-white font-extrabold">キックボクシング</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/kick.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">キックボクシングでは非常に多くのエネルギーを消費するため、トレーニング前に栄養を事前に補給します。</p>
+                        </div>
+                        <div class="houses__item">
+                            <p class="text-white font-extrabold">ダンベルトレーニング(ブルガリアンスクワット)</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/danbel3.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">ブルガリアンスクワットで大腿四頭筋・大腿二頭筋・内転筋などの太ももの筋肉が鍛えられることによって、太もも全体の引き締め効果が期待できます。</p>
+                        </div>
+                        <div class="houses__item">
+                            <p class="text-white font-extrabold">ダンベルトレーニング(ショルダープレス)</p>
+                            <div class="cover-slide hover-darken">
+                            <div
+                                class="bg-img-zoom img-bg50"
+                                style="background-image: url(images/danbel2.jpg)"></div>
+                            </div>
+                            <p class="houses__title text-gray">肩の筋肉である三角筋などを鍛える筋トレ「ダンベルショルダープレス」。日々のトレーニングに取り入れることで、逆三角形の引き締まったボディを手に入れましょう。</p>
+                        </div>
+                        </div>
+                    </section>
+
+                    <section class="cource">
+                        <div class="cource__inner">
+                            <h2 class="main-title text-gray tween-animate-title">Price and System</h2>
+                            <p class="text-white tween-animate-title">Coreはチケット制でトレーニング予約をします。</p>
+                            <div class="cource__item">
+                                <div class="cource__item__inner_1 border-2">
+                                    <div class="cource__item__img">
+                                        <img src="images/price1.jpg" alt="">
+                                    </div>
+                                    <div class="cource__item__text">
+                                        <p class="cource__item__title text-center text-3xl">1レッスン: ¥7,000</p>
+                                        <p class="cource__item__text">普段ジムには通っているが、<span class="text-yellow-300 text-xl">正しいフォーム</span>
+                                        でトレーニング出来ているか確認したい方にオススメです。ミット打ちで運動不足解消・ストレス解消も同時に体験できます!</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="cource__item mt-2">
+                                <div class="cource__item__inner_1 border-2">
+                                    <div class="cource__item__img">
+                                        <img src="images/price1.jpg" alt="">
+                                    </div>
+                                    <div class="cource__item__text">
+                                        <p class="cource__item__title text-center text-3xl">スタンダードプラン(1レッスン:¥6,250〜)</p>
+                                        <p class="cource__item__text">これからダイエットやボディメイクを始めたい方<span class="text-yellow-300 text-xl">フィットネスの知識</span>
+                                        をしっかりと学びたい方にオススメです。</p><br>
+                                        <p class="text-center text-xl">通い方の目安</p>
+                                        <p class="text-xl text-center">4回チケット ¥26,600(週1、1ヶ月)</p>
+                                        <p class="text-xl text-center">8回チケット ¥55,000(週1、2ヶ月)</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="cource__item mt-2">
+                                <div class="cource__item__inner_1 border-2">
+                                    <div class="cource__item__img">
+                                        <img src="images/price1.jpg" alt="">
+                                    </div>
+                                    <div class="cource__item__text">
+                                        <p class="cource__item__title text-center text-3xl">プレミアムプラン(1レッスン¥6000)</p>
+                                        <p class="cource__item__text">集中的にダイシエットをしたい方にオススメのプランです。週一回よりも<span class="text-yellow-300 text-xl">週二回</span>の運動の方がダイエット効果が高まるという研究データがあります。</p><br>
+                                        <p class="text-center text-xl">通い方の目安</p>
+                                        <p class="text-xl text-center">16回チケット ¥96,600(週2、1ヶ月)</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <p class="text-xl">*上記の料金は税込み価格です。<span class="text-xl underline">チケットに期限はございません。通い方もご相談ください。</span></p>
+                            </span></p>
+                        </div>
+                    </section>
+                    <section class="flowchart">
+                        <div class="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
+                            <div class="flowchart__inner">
+                                <h2 class="main-title text-gray tween-animate-title">Training Flow Chart</h2>
+                                <p class="text-white tween-animate-title mb-2">コアの基本的なトレーニングの流れ</p>
+    
+                                <div class="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
+                                  <div class="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
+                                    <div class="w-px h-full bg-gray-300 lg:w-full lg:h-px"></div>
+                                  </div>
+                                  <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+                                    <div class="flex items-center mb-2">
+                                        <p class="flex items-center  mr-2 justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                                          1
+                                        </p>
+                                      <p class="text-lg font-bold leading-5">ウォームアップ</p>
+                                    </div>
+                                    <p class="text-sm text-gray-900">
+                                      カウンセリングと筋トレ前のウオーミングアップをして本トレーニング前のケアをします...
+                                    </p>
+                                  </div>
+                                  <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+                                    <div class="flex items-center mb-2">
+                                        <p class="flex items-center mr-2 justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                                          2
+                                        </p>
+                                      <p class="text-lg font-bold leading-5">ウエイトトレーニング</p>
+                                    </div>
+                                    <p class="text-sm text-gray-900">
+                                      バーベル・ダンベルなどを使ったトレーニングで基礎代謝を高めると同時に、<span class="bg-indigo-700 p-1 text-white font-bold">脂肪燃焼スイッチを</span>ここで入れます。
+                                    </p>
+                                  </div>
+                                  <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+                                    <div class="flex items-center mb-2">
+                                        <p class="flex items-center mr-2 justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                                          3
+                                        </p>
+                                      <p class="text-lg font-bold leading-5">高強度脂肪燃焼(有酸素キックボクシング)</p>
+                                    </div>
+                                    <p class="text-sm text-gray-900">
+                                      ミット打ち・スパリーングなどで<span class="bg-indigo-700 p-1 text-white font-bold">フォットバーンゾーン</span>(最大心拍数×40～60％)の心拍数を狙ってトレーニングをします。
+                                        ストレス解消にも効果的です。
+                                    </p>
+                                  </div>
+                                  <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+                                    <div class="flex items-center mb-2">
+                                        <p class="flex items-center mr-2 justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                                          4
+                                        </p>
+                                      <p class="text-lg font-bold leading-5">アフターバーントレーニング</p>
+                                    </div>
+                                    <p class="text-sm text-gray-900">
+                                        トレーニング後も脂肪燃焼が持続するようにトレーニング後のケアをします。
+                                    </p>
+                                  </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <section class="signin" id="service">
+                        <div class="signin__inner">
+                            <h2 class="main-title text-gray tween-animate-title">Entry Core's Member</h2>
+                            <p class="sub-title text-gray tween-animate-title mb-2">Core会員登録・Core入会までの流れ</p>
+                            <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
+                                <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
+                                  <div class="lg:py-6 lg:pr-16">
+                                    <div class="flex">
+
+                                    </div>
+
+                                    <div class="flex">
+                                      <div class="flex flex-col items-center mr-4">
+                                        <div>
+                                          <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                            <svg class="w-8 text-gray-300" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                              <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                              <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                        <div class="w-px h-full bg-gray-300"></div>
+                                      </div>
+                                      <div class="pt-1 pb-8">
+                                        <p class="mb-2 text-lg font-bold red">カウンセリング・見学<span class="text-indigo-600">(無料)</span></p>
+                                        <p class="text-gray-300">
+                                          Coreの見学や、身体に関する悩みのご相談を受け付けます。その後、もし<span class="underline red font-extrabold">体験トレーニング</span>をしたい方はその旨を教えてください。
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="flex">
+                                      <div class="flex flex-col items-center mr-4">
+                                        <div>
+                                          <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                            <svg class="w-8 text-gray-300" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                              <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
+                                              <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                        <div class="w-px h-full bg-gray-300"></div>
+                                      </div>
+                                      <div class="pt-1 pb-8">
+                                        <p class="mb-2 text-lg font-bold red">体験トレーニング(60分/¥4500)</p>
+                                        <p class="text-gray-300">
+                                          Coreの体験コースです。お一人様1回、スタンダードなコースを受講できます。体験ですが、ダイエット効果を体感していただけると考えています。
+                                          <br>*いつでも受講できます。<span class="underline font-bold">前日の睡眠は良く取ってからお越しください。</span>
+                                          <br>*ペア割がありますので、複数人での参加希望の方は事前にお知らせください。
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="flex">
+                                      <div class="flex flex-col items-center mr-4">
+                                        <div>
+                                          <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                            <svg class="w-8 text-gray-300" stroke="currentColor" viewBox="0 0 24 24">
+                                              <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6,12 10,16 18,8"></polyline>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="pt-1">
+                                        <p class="mb-2 text-lg font-bold red">本入会</p>
+                                        <p class="text-gray-300">Coreでの全サービスを使えるようになります。詳細な内容はオーナーとご相談の上カスタマイズできます。</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="relative">
+                                    <img
+                                      class="inset-0 object-cover object-bottom w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
+                                      src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                        </div>    
+                    </section>
+
+                </main>
+                <aside class="side right">
+                    <div class="side__inner">
+                        <span class="tween-animate-title">&copy;Kanemichi Muraoka</span>
+                    </div>
+                </aside>
+            </div>
+            </div>
+            <footer class="footer appear up bg-white">
+                <footer class="footer__inner">
+                    <div class="logo item">
+                        <img src="images/logo.svg" alt="" class="logo__img" />
+                        <span class="logo__the">The_</span>
+                        <span class="red">_Core</span>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__ul">
+                            <li class="footer__li item font-bold"><a href="#">ホーム</a></li>
+                            <li class="footer__li item font-bold"><a href="#">よくある質問</a></li>
+                            <li class="footer__li item font-bold"><a href="https://twitter.com/tomomuranet"><img src="./images/twitter.svg"></a></li>
+                            <li class="footer__li item font-bold"><a href="https://www.instagram.com/muraokainsta/"><img src="./images/instagram.svg"></a></li>
+                        </ul>
+                        <div class="footer__copyright item text-gray-500">
+                        &copy; Kanemichi Muraoka
+                        </div>
+                    </nav>
+                </footer>
+            </footer>
+        </div>
+        <nav class="mobile-menu">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" class="logo__img" />
+                <span class="logo__stay">The_</span>
+                <span class="logo__world red">_Core</span>
+            </div>
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#thinking">
+                        <span class="main-title text-gray">About Core</span>
+                        <span class="sub-title text-gray">コンセプト・理念</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#strategy">
+                    <span class="main-title text-gray">Strategy</span>
+                    <span class="sub-title text-gray">コアの戦略・特徴</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#service">
+                    <span class="main-title text-gray">Our Service</span>
+                    <span class="sub-title text-gray">会員サービス・入会までの流れ</span>
+                    
+                    </a>
+                </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#trainer">
+                <span class="main-title text-gray">Trainer</span>
+                <span class="sub-title text-gray">トレーナー紹介</span>
+                <a href="https://www.instagram.com/muraokainsta/"><img src="./images/instagram.svg"></a>
+                <a href="https://twitter.com/tomomuranet"><img src="./images/twitter.svg"></a>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+
+</div>
+
+
+<script src="js/app.js" defer></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/scroll-polyfill.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/text-animation.js"></script>
+<script src="js/hero-slider.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/tab-menu.js"></script>
+<script src="js/main.js"></script>
+<script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+
+<script>
+$(function(){
+
+    const scrollTo = function(href) {
+        let speed = 1000;
+        let target = $(href == "#" || href == "" ? 'html' : href); //ここの処理とは？
+        let position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing'); //animateの第一引数 要素.animate(CSSプロパティ)
+    }
+    $('a[href^="#"]').click(function() {
+        let href= $(this).attr("href");
+        scrollTo(href);
+        return false;
+    });
+   $('a.mobile-menu__link').click(function() {
+      let href = $(this).attr("href");
+        
+        document.querySelector('#global-container').classList.remove('menu-open');
+        
+        setTimeout(()=>{
+          scrollTo(href)
+        },500);
+        
+      console.log(href);
+      return false;
+   });
+});
+</script>
+</body>
+</html>
